@@ -2,19 +2,19 @@
   box-sizing: border-box;
 }
 
-
-/* Zeroing out the margins and padding */
-body {
-  margin: 0;
-  padding: 0;
+.wrapper {
   max-width: 960px;
-  background-image: url("assets/images/concrete-texture.png");
+  margin: auto;
 }
 
-.wrapper {
-      max-width: 960px;
-      border-color: #cccccc;
-      border-width: 1px;
+/* Setting Max Width of Page and Zeroing out the margins and padding */
+body {
+  background-image: url("../images/concrete-texture.png");
+  max-width: 960px;
+  margin: 0;
+  padding: 0;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
@@ -23,6 +23,9 @@ header {
       position: relative;
       display: block;
       background: white;
+      width: auto;
+      height: 65px;
+      border: 1px solid #cccccc;
 }
 
 header h1 {
@@ -36,29 +39,35 @@ header h1 {
 
 nav {
       padding-left: 0;
+      margin-top: 10px;
       margin-bottom: 0;
       list-style: none;
       float: right;
       display: inline;
+      color: #777777;
 }
 
 nav li {
       position: relative;
       display: inline-block;
       list-style-type: none;
-      font-family: arial;
-      color: #666;
-      padding: 0 1rem;
+      color: #777777;
+      /*
+      padding: 0 1rem; */
+      text-decoration: none;
 }
 
 nav li > a {
       position: relative;
       display: block;
       padding: 10px 15px;
+      text-decoration: none;
 }
 
 nav > li > a:hover, 
-nav > li > a: focus {
+nav > li > a:focus,
+nav > li > a:visited,
+nav > li > a:link {
       text-decoration: none;
 }
 
@@ -66,7 +75,20 @@ hr {
        display: block;
        position: relative;
        padding: 0;
-       margin: 8px auto;
+       margin: 5px 0 5px 0;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       line-height: 0;
+       clear: both;
+       border: 1px solid #cccccc;
+    }
+
+    #toprule {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 0 auto;
        height: 0;
        width: 100%;
        max-height: 0;
@@ -74,88 +96,194 @@ hr {
        line-height: 0;
        clear: both;
        border: none;
-       border-top: 1px solid #aaaaaa;
-       border-bottom: 1px solid #ffffff;
+       border-top: 0 solid #aaaaaa;
+       border-bottom: 0 solid #ffffff;
     }
 
 h1 {
       color: #4AAAA5;
       font-family: 'Georgia', Times, Times New Roman, serif;
+      font-weight: bold;
 }
 
 h2 {
       color: #4AAAA5;
       font-family: 'Georgia', Times, Times New Roman, serif;
+      font-size: 36px;
+      font-weight: bold;
 }
 
-/*
-p {
-  margin-left: 50px;
-  padding-bottom: 5px;
+h3 {
+      color: #4AAAA5;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      font-size: 24px;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      font-weight: bold;
 }
-*/
+
+p {
+    margin: 10px 0 10px 0;
+    padding: 2px;
+    font-size: 16px;
+}
+
+.bothsections {
+  margin: 20px 0px 0px 50px;
+}
 
 #charlie {
       float: left;
       width: 100%;
       height: 100%;
-      max-width: 25%;
+      max-width: 35%;
       max-height: auto;
-      margin: 5px;
+      margin: 10px 10px 10px 0;
 }
 
-#aboutme{
+#maincontent {
       float: left;
-      max-width: 650px;
-      margin: 10px;
-      padding: 0;
+      max-width: 610px;
+      margin: 10px 0 0 0;
+      padding: 10px;
       border-style: solid;
       background: white;
-      border-color: #cccccc;
-      border-width: 0;
+      border-color: #dddddd;
+      border-width: 1px;
+      height: auto;
 }
 
-#followme {
+#connectsidebar {
       float: right;
       max-width: 270px;
       max-height: auto;
-      margin: 10px;
-      padding: 0;
+      margin: 10px 0 0 0;
+      padding: 10px;
       border-style: solid;
       background: white;
-      border-color: #cccccc;
-      border-width: 0;
+      border-color: #dddddd;
+      border-width: 1px;
+      text-align: center;
 }
 
-#followme img {
+#hrsidebar {
+  width: 75%;
+  align-content: center;
+}
+
+#connectsidebar img {
       width: 48px;
       height: auto;
       padding: 0;
-      margin: 0;
-      float: left;
+      margin: 10px 0 10px 0;
 }
 
-#followme li {
+#connectsidebar ul {
+  display: inline-block;
+  padding-top: 0;
+}
+
+#connectsidebar li {
       position: relative;
       display: inline;
       list-style-type: none;
       margin: 0;
-      padding: 0;
+      padding: 5px;
 }
 
-#followme > li > a:hover, 
-#followme > li > a: focus {
+#connectsidebar > li > a:hover, 
+#connectsidebar > li > a: focus {
       text-decoration: none;
 }
 
+/*  CSS to Style Form Data on Contact Page */
+form {
+  width: 650px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 15px 0 15px 0;
+}
+
+input {
+
+}
+
+.inputtext {
+    width: 580px;
+    margin: 0 0 10px 0;
+}
+
+textarea {
+  width: 580px;
+  height: auto;
+}
+
+#submit {
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #4AAAA5;
+    border: 0;
+    font-size: 1em;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Styling to make Portfolio Content Area Work */
+
+.imagebox {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    clear: both;
+}
+
+.imagetext {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+    left: 0;
+    top: 120px;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: bottom;
+}
+h4 {
+   display: inline-block;
+   background: #4AAAA5;
+   color: white;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   font-size: 20px;
+   padding: 10px 0 10px 0;
+   width: 100%;
+}
+.portfolioThumb {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer Styling for All Pages */
 footer {
       background: #666666;
       color: white;
-      position: absolute;
+      position: fixed;
       right: 0;
       bottom: 0;
       left: 0;
       padding: 1rem;
       text-align: center;
+      border-top: 10px solid #4AAAA5;
+      max-width: 960px;
 }
 
+small {
+  font-size: 12px;
+}

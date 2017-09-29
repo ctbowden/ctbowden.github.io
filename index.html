@@ -4,12 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Charles Bowden Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 
 <body>
+
 	<div class="wrapper">
+
 	<header>
 <!-- Headerline -->		
 		<h1>Charles Bowden</h1>
@@ -17,50 +20,67 @@
 <!-- Top Navigation Bar -->
 		<nav>
 			<ul>
-				<a href="index.html"><li>About</li></a>
-				<a href="portfolio.html"><li>Portfolio</li></a>
-				<a href="contact.html"><li>Contact</li></a>
+				<li><a href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<hr>
-
-	<section id="aboutme">
+	<hr id="toprule">
+	
+	<div class="bothsections">
+<!-- Contains HTML for the About Me Section of the page -->
+	<section id="maincontent">
 			
+		<!-- Using H2 over H1 because of screen readers, thanks to validation -->
 
-			<h1>About Me</h1>
+		<h2>About Me</h2>
 
-			<!-- Horizontal Rule Divider styled with CSS -->
-			<hr>
+		<!-- Horizontal Rule Divider styled with CSS -->
+		<hr>
 			
-			<!-- Being Paragraphs -->
+		<!-- Image of Charles Bowden at Epcot -->
 
-			<img src="assets/images/charlie.jpg" alt="Charlie" id="charlie">
+		<img src="assets/images/charlie.jpg" alt="Charlie" id="charlie">
 
-			<p>Charles is inquisitive.  Nuff Said?</p>  
+		<!-- About Me Paragraphs -->
 
-			<p>No topic is too boring and no words are too dull, this includes labels!  Charles, or Charlie to everyone, simply can't ignore the rabbit-holes of the web so no topic may go undiscovered ...<em>even those he regrets</em>.</p>
+		<p>Charles is inquisitive.  Nuff Said?</p>  
 
-			<p>Charlie's past is littered with regrets.  These ranging from a history degree, a middle grades teaching job and even a master's in education from NCSU for which he's hoplessly in debt.  Today, he can be found studying coding at the UNC-CH Coding Bootcamp where he hopes to finally achieve the American Dream of eating something besides ramen.</p>
+		<p>No topic is too boring and no words are too dull to read, labels included!  Charles simply can't ignore the rabbit-holes of the web and no topic may go undiscovered ...<em>even those he regrets</em>.  Despite not being much of a drinker, he is a trivia powerhouse and could be a MVP if you're looking to draft him for your bar trivia team.
+		</p>
 
-		</section>
+		<p>Charles's past is littered with regrets.  These ranging from a history degree, a middle grades teaching job and even a master's in education from NCSU for which he's hoplessly in debt.  While these experiences have allowed him to grow into the person he is today, he can't help but think there might have been a better way to get here.
+		</p>
 
-		<section id="followme">
-			<h2>Connect with Me</h2>
-		
+		<p>This hasn't deterred him from continuing his education though.  Today, Charles can be found studying web development at the UNC-CH Coding Bootcamp. Perhaps with a little luck, he will finally achieve the American Dream of eating something besides ramen and hot dogs.
+		</p>
+
+	</section>
+
+<!-- HTML of Connect with Me elements -->
+
+	<section id="connectsidebar">
+
+		<h3>Connect with Me</h3>
+
 			<!-- Follow Me Buttons -->
 			<ul>
 				<li><a href="https://github.com/ctbowden"><img src="assets/images/github.png" alt="GitHub"></a></li>
 				<li><a href="https://www.linkedin.com/in/charles-bowden-1b66267/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a></li>
 				<li><a href="https://stackexchange.com/users/11369839/charlie"><img src="assets/images/stackoverflow.png" alt="Stack Overflow"></a></li>
 			</ul>
-		</section>
+	</section>
 	
-		<footer>
-		<small>&copy; Copyright 2017 Charles Bowden</small>
-		</footer>
-
 	</div>
+
+	<footer>
+		<small>&copy; Copyright 2017 Charles Bowden</small>
+	</footer>
+
+	
+	</div>
+
 </body>
 </html>
